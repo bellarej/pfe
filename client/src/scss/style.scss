@@ -1,0 +1,146 @@
+// If you want to override variables do it here
+@import 'variables';
+
+// Import CoreUI styles
+@import '~@coreui/coreui/scss/coreui.scss';
+
+// Some temp fixes
+@import 'fixes';
+
+// If you want to add something do it here
+@import 'custom';
+// If you want to add something do it here
+@import 'pages';
+
+.btn_modal_add_user {
+       margin-bottom: 35px;
+       margin-left: auto;
+       margin-right: 20px;
+}
+
+.article-list {
+       position: relative;
+       display: flex;
+       width: 100%;
+       flex-wrap: wrap;
+       gap: 50px;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+       color: #af3e35;
+}
+
+.article_des {
+       word-wrap: break-word;
+       width: 19em;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+       min-width: 28em !important;
+}
+
+.progress.progress-xs.my-3.mb-0 {
+       opacity: 0;
+}
+
+.dashboard-container {
+       .card-body {
+              flex: 1 1 auto;
+              min-height: 1px;
+              width: 33em;
+              padding: 1.25rem;
+              /* height: 17em; */
+              font-size: 2em;
+       }
+}
+#modal_view_task {
+       .modal-content {
+              height: 63em;
+              width: 100%;
+              overflow: scroll;
+              .modal-body {
+                     height: 63em;
+                     width: 100%;
+              }
+       }
+
+       .edit-task {
+              .modal-content {
+                     height: unset;
+                     overflow: scroll;
+                     .modal-body {
+                            height: unset;
+                            width: 100%;
+                     }
+              }
+       }
+}
+#td-action-user {
+       display: flex;
+       width: 18em;
+       padding: 0;
+       margin-right: -10em;
+       .btn {
+              width: 8em;
+              height: 3em;
+       }
+}
+
+td#tec-action {
+       width: 16em;
+}
+
+.cat-main-page {
+       display: block;
+       width: 100%;
+
+       .add-cate-div {
+              float: right;
+              display: flex;
+              align-items: center;
+
+              .btn-submit:not(:disabled) {
+                     background-color: rgb(0, 195, 255);
+                     border: 1px solid white;
+                     color: white;
+                     height: 57px;
+                     cursor: pointer;
+                     &:hover {
+                            background-color: white;
+                            border: 1px solid rgb(0, 195, 255);
+                            color: rgb(0, 195, 255);
+                     }
+              }
+              .btn.disabled,
+              .btn:disabled {
+                     height: 57px;
+                     border: 1px solid white;
+                     color: white;
+                     background-color: rgb(97, 97, 97);
+              }
+       }
+}
+.flex-center {
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+
+       .btn_modal_add_user {
+              padding: 0;
+              margin: 0;
+       }
+}
+.filter-tasks {
+       display: flex;
+       width: 100%;
+       gap: 50px;
+       margin-bottom: 10px;
+       .filter-date {
+              width: 30%;
+       }
+}
+
+.planning-list-container {
+       display: block;
+}

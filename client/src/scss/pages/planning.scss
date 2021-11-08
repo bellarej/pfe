@@ -1,0 +1,14 @@
+.planning-list-container {
+       position: relative;
+
+       .add_task_btn {
+              display: flex;
+              .add {
+                     margin-left: auto;
+              }
+       }
+       .task-list {
+              position: relative;
+              width: 100%;
+       }
+}
